@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;  
+}
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.logo span {
+  color:#F7C85A;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #F7C85A;
+}
+.Home {
+  height: 100vh;
+  position: relative;
+  background: url("./img/pexels-robinstickel-70497.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+ }
+
+.Home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.Home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile i {
+  font-size: 50px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.profile i:hover {
+  color: #000000;
+}
+#offers {
+  height: 80vh;
+  background: url("img/offer-background.jpg") center center/cover fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.offer-box img {
+  width: 200px;
+}
+
+#offers h2 {
+  color: #F7C85A;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#offers .title p {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+#offers .offers-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#offers .offers-items img {
+  width: 200px;
+}
+
+#offers .offers-items h3 {
+  font-size: 25px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+#offers .offers-items p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Offers Section end */
+/* Menu Section Start */
+#Product {
+  padding: 60px;
+ background-color: #464646;
+  text-align: center;
+}
+.card-img-top {
+  width: 100%;
+  height: 400px;     
+  object-fit: contain;  
+}
+.card{
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}

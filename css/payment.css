@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold
+}
+
+.logo span {
+  color: #F7C85A;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.checkout-container {
+  max-width: 900px;
+  margin: 40px auto;
+  color: #000000;
+  background-color: #fff2f2;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.cart-item input {
+  width: 60px;
+}
+
+.remove-btn {
+  padding: 2px 6px;
+  font-size: 20px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.payment-extra {
+  margin-top: 15px;
+  display: none;
+}

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food</title>
+  <!-- مكتبه بوت استراب  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- مكتبه الايقونات فونت اوسم -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- مكتبه الخطوط جوجل فونت  -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/food.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <h4 class="logo mb-0">Food <span>Lover 🍽️</span></h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navDropdown" role="button" data-bs-toggle="dropdown">Menu</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="cafe.html">Drinks & Desserts</a></li>
+            <li><a class="dropdown-item" href="food.html">Food</a></li>
+          </ul>
+        </li>
+        <!-- Search Box -->
+        <li class="nav-item ms-3">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Food</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <!-- Card 1 -->
+  <div class="col">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/pizzea.png" class="card-img-top" alt="Pizza">
+      <div class="card-body text-center d-flex flex-column">
+        <h5 class="card-title">Pizza Margherita</h5>
+        <p class="card-text">Delicious classic pizza with fresh tomatoes, mozzarella, and basil leaves. Perfectly baked.</p>
+        <p class="card-text fw-bold">$80.00</p>
+        <button class="btn btn-primary mt-auto" onclick="addToCart('Pizza Margherita', 80)">Add Order</button>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="col">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/rice.jpg" class="card-img-top" alt="Fried Rice">
+      <div class="card-body text-center d-flex flex-column">
+        <h5 class="card-title">Steamed Rice</h5>
+        <p class="card-text">Fluffy steamed rice cooked to perfection, ideal to accompany any main course or curry dish.</p>
+        <p class="card-text fw-bold">$25.00</p>
+        <button class="btn btn-primary mt-auto" onclick="addToCart('Chicken Fried Rice', 6.0)">Add Order</button>
+      </div>
+    </div>
+  </div>
+  <!-- Card 3 -->
+  <div class="col">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/cok.png" class="card-img-top" alt="Coke">
+      <div class="card-body text-center d-flex flex-column">
+        <h5 class="card-title">Grilled Chicken</h5>
+        <p class="card-text">Tender grilled chicken with savory spices, juicy and flavorful. Perfect main dish for lunch or dinner.</p>
+        <p class="card-text fw-bold">$50.00</p>
+        <button class="btn btn-primary mt-auto" onclick="addToCart('Grilled Chicken', 50)">Add Order</button>
+      </div>
+    </div>
+  </div>
+  <!-- Card 4 -->
+  <div class="col">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/burger.png" class="card-img-top" alt="Burger">
+      <div class="card-body text-center d-flex flex-column">
+        <h5 class="card-title">Beef Burger</h5>
+        <p class="card-text">Juicy beef patty with fresh lettuce, tomato, and cheese inside a soft sesame bun.</p>
+        <p class="card-text fw-bold">$5.75</p>
+        <button class="btn btn-primary mt-auto" onclick="addToCart('Beef Burger', 5.75)">Add Order</button>
+      </div>
+    </div>
+  </div>
+  <!-- Card 5 -->
+  <div class="col">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/Spaghetti.png" class="card-img-top" alt="Molten Cake">
+      <div class="card-body text-center d-flex flex-column">
+        <h5 class="card-title">Spaghetti Bolognese</h5>
+        <p class="card-text">Classic Italian pasta with rich beef and tomato sauce, garnished with parmesan.</p>
+        <p class="card-text fw-bold">$45.00</p>
+        <button class="btn btn-primary mt-auto" onclick="addToCart('Spaghetti Bolognese', 45)">Add Order</button>
+      </div>
+    </div>
+  </div>
+  <!-- Card 6 -->
+  <div class="col">
+    <div class="card h-100 d-flex flex-column">
+      <img src="img/Garden Salad.png" class="card-img-top" alt="Donut">
+      <div class="card-body text-center d-flex flex-column">
+        <h5 class="card-title">Fresh Garden Salad</h5>
+        <p class="card-text">Crisp lettuce, cherry tomatoes, cucumbers, and carrots tossed with light</p>
+        <p class="card-text fw-bold">$2.00</p>
+        <button class="btn btn-primary mt-auto" onclick="addToCart('fresh Garden Salad', 2.0)">Add Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="text-center mt-4">
+    <a href="checkout.html">
+    <button id="btn" class="btn btn-success btn-lg" onclick="goToPayment()">Go to Checkout</button>
+    </a>
+  </div>
+  <footer class="bg-dark text-white pt-4">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- About -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Food Lover</h5>
+          <p>Your satisfaction is our priority. Enjoy delicious meals at unbeatable prices!</p>
+          <img src="img/logo.png" alt="Food Lover Logo" style="width:100px;">
+        </div>
+        <!-- Links -->
+        <div class="col-md-4 mb-4 footer">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="food.html" class="text-white text-decoration-none">Food</a></li>
+            <li><a href="cafe.html" class="text-white text-decoration-none">Drinks & Desserts</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+            <li><a href="checkout.html" class="text-white text-decoration-none">Checkout</a></li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-white me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="text-white"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center p-3">
+      &copy; 2026 Food Lover. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
